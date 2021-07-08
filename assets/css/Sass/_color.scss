@@ -1,0 +1,45 @@
+$dark:#080a3d;
+$success:#12c4a0;
+$danger:#ff5d2a;
+$light:#ffffff;
+
+
+
+@mixin setcolor($value) {
+    @if $value == "light"{
+       color: #{$light} !important;
+    }
+    @else if $value=="success"{
+        color: #{$success} !important;
+    }
+    @else if $value=="danger"{
+        color: #{$danger} !important;
+    }
+    @else if $value=="dark"{
+        color: #{$dark} !important;
+    }
+
+}
+@mixin setbgcolor($value) {
+    @if $value == "light"{
+        background-color:#{$light} !important;
+    }
+    @else if $value=="success"{
+        background-color: #{$success} !important;
+    }
+    @else if $value=="danger"{
+        background-color: #{$danger} !important;
+    }
+    @else if $value=="dark"{
+        background-color: #{$dark} !important;
+    }
+
+}
+
+    // $theme-colors: ('primay':$primary,
+    //     "dark": #080a3d,
+    //     "light": #ffffff,
+    //     "success": #12c4a0,
+    //     "orange": #ff5d2a,
+    //     "skyblue": #f2f7fa,
+    // );
