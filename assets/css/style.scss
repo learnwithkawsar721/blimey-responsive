@@ -1,5 +1,6 @@
 @import "Sass/color";
 @import "Sass/basic";
+@import "./Sass/font";
 /*====== Basic Css ===========*/ 
 
 /*======== NabVar Design Start ============*/ 
@@ -7,5 +8,133 @@
 /*======== NabVar Design End ============*/
 
 /*======== Header Area Design Start ============*/
-@import "./Sass/header";
-/*======== Header Area Design End ============*/
+.header__area{
+    background: url(../images/bg.png) top left no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    .header__main__content{
+        padding: 100px 0;
+        
+        .header__content{
+
+            .header_p1{
+                @include setFont(24,700,dark-light);
+                line-height: 2em;
+            }
+            h1{
+                @include setFont(62,800,dark);
+                line-height: 1.2em;
+            }
+            .text__color{
+                @include setcolor(success);
+            }
+            .header__p2{
+                @include setFont(18,500,dark-light);
+                margin: 40px 0;
+                max-width: 450px;
+                line-height: 1.5;
+            }
+            .header__btn{
+                .btn{
+                    @include setcolor(light);
+                    @include setbgcolor(dark);
+                }
+            }
+        }
+        .header__img{
+            width: 100%;
+            height: 100%;
+            img{
+                width: 80%;
+                
+            }
+        }
+    }
+}
+
+
+
+/*======== Responsive Design Start ============*/
+/* Extra small devices (phones, 600px and down) sm */
+@media only screen and (min-width:320px) and (max-width: 480px) {
+    /*======== Header Area Design Start ============*/
+    .header__area{
+        .header__content{
+            margin-bottom: 50px;
+            text-align: center;
+            .header_p1{
+                font-size: 1.375rem !important;
+               
+            }
+            h1{
+                font-size: 1.625rem !important;
+            }
+            .header__p2{
+                font-size: 1rem !important;
+                 margin: 1.25rem 0 !important;
+            }
+            .header__btn{
+                padding-top: 0.625rem;
+            }
+        }
+        .header__main__content{
+            padding: 3.125rem 0 !important;
+        }
+    }
+    /*======== Header Area Design End ============*/
+}
+/* Small devices (portrait tablets and large phones, 600px and up) md */
+@media only screen and (min-width:481px) and (max-width: 768px) {
+    /*======== Header Area Design Start ============*/
+    .header__area {
+
+        .header__content {
+
+            h1 {
+                font-size: 1.5rem !important;
+            }
+
+            .header_p1 {
+                font-size: 1.0625rem !important;
+            }
+
+            .header__p2 {
+                font-size: 0.75rem !important;
+                margin: 1.25rem 0 !important;
+            }
+
+            .header__btn {
+                padding-top: 0.625rem;
+
+                .btn {
+                    font-size: 0.875rem !important;
+                }
+            }
+        }
+    }
+
+    .header__area .header__main__content {
+        padding: 3.125rem 0 !important;
+    }
+    /*======== Header Area Design End ============*/
+}
+/* Medium devices (landscape tablets, 768px and up) lg */
+@media only screen and (min-width:769px) and (max-width: 1024px) {
+     /*======== Header Area Design Start ============*/
+    .header__area{
+        .header__content{
+            
+            h1{
+                font-size: 2.375rem !important;
+            }
+        }
+    }
+     /*======== Header Area Design End ============*/
+}
+/* Large devices (laptops/desktops, 992px and up)  xl */
+@media only screen and (min-width:1025px) and (max-width: 1200px) {
+    @include col(xl);
+}
+/*======== Responsive Design End ============*/
+

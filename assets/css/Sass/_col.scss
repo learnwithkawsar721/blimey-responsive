@@ -3,9 +3,10 @@
     @if $col == $col {
          @for $i from 1 through 12 {
              .col-#{$col}-#{$i} {
-                 width: 100%/12*$i;
+                 width: 100%/12*$i !important;
              }
          }
+         
 
     }
 }

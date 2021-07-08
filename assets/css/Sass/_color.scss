@@ -1,4 +1,5 @@
 $dark:#080a3d;
+$darklight:#5e5e72;
 $success:#12c4a0;
 $danger:#ff5d2a;
 $light:#ffffff;
@@ -17,6 +18,9 @@ $light:#ffffff;
     }
     @else if $value=="dark"{
         color: #{$dark} !important;
+    }
+    @else if $value=="dark-light"{
+        color: #{$darklight} !important;
     }
 
 }

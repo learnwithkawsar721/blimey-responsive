@@ -1,0 +1,15 @@
+@import "./color";
+@mixin setFont($size,$weight,$color) {
+    @if $size {
+        font-size: #{$size}px;
+    }
+    @if $weight{
+
+        font-weight: #{$weight};
+    }
+    @if $color{
+
+        @include setcolor($color);
+    }
+    
+}

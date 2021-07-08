@@ -1,7 +1,10 @@
 @import "./color";
+.header__area{
+    background: url(../../images/bg.png);
+}
 /* Extra small devices (phones, 600px and down) sm */
 @media only screen and (max-width: 600px) {
-   
+  
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) md */
