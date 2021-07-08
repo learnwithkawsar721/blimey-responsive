@@ -1,10 +1,23 @@
 @import "color";
 
 
+.stikey {
+    position: fixed;
+    background-color: rgb(76, 0, 143);
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 30px 0 !important;
+    animation: ease-in-out 4s;
+    transition: all 0.5s linear;
+}
+
 .navbar{
     // background-color:#{map-get($map:$theme-colors,$key:"dark")};
     width: 100%;
     padding: 15px 0;
+    margin-top: 1px;
+    transition: all 0.5s linear;
    @include setbgcolor(dark);
     .navbar-brand{
         padding: .3125rem 0;

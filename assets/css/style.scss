@@ -2,5 +2,10 @@
 @import "Sass/basic";
 /*====== Basic Css ===========*/ 
 
-/*======== NabVar Design ============*/ 
+/*======== NabVar Design Start ============*/ 
 @import "Sass/navbar";
+/*======== NabVar Design End ============*/
+
+/*======== Header Area Design Start ============*/
+@import "./Sass/header";
+/*======== Header Area Design End ============*/

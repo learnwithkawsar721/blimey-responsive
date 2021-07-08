@@ -1,0 +1,14 @@
+
+@mixin col($col) {
+    @if $col == $col {
+         @for $i from 1 through 12 {
+             .col-#{$col}-#{$i} {
+                 width: 100%/12*$i;
+             }
+         }
+
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+

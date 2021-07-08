@@ -1,5 +1,6 @@
 /* import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+@import "./col";
 
 *{
     margin: 0;
@@ -22,7 +23,10 @@ img{
     display: block;
     margin: 0;
 }
+.container-fluid{
+    width: 100%;
 
+}
 .container{
     display: flex;
     // flex-wrap: inherit;
@@ -43,3 +47,38 @@ img{
 .bg-dark{
     @include setbgcolor(dark);
 }
+.row{
+    width: 100%;
+    margin: auto;
+}
+ .row::after {
+     content: "";
+     clear: both;
+     display: table;
+
+ }
+ [class*="col-"] {
+     float: left;
+     box-sizing: border-box;
+ }
+/* Extra small devices (phones, 600px and down) sm */
+@media only screen and (max-width: 600px) {
+    @include col(sm);
+}
+/* Small devices (portrait tablets and large phones, 600px and up) md */
+@media only screen and (min-width: 600px) {
+   @include col(md);
+}
+/* Medium devices (landscape tablets, 768px and up) lg */
+@media only screen and (min-width: 768px) {
+    @include col(lg);
+}
+/* Large devices (laptops/desktops, 992px and up)  xl */
+@media only screen and (min-width: 992px) {
+     @include col(xl);
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) xxl */
+@media only screen and (min-width: 1200px) {
+     @include col(xxl);
+}
+
