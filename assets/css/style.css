@@ -59,6 +59,7 @@ img {
 .navbar {
   width: 100%;
   padding: 15px 0;
+  background-color: #080a3d !important;
 }
 
 .navbar .navbar-brand {
@@ -94,7 +95,7 @@ img {
 }
 
 .navbar .navbar-collapse .navbar-nav .navbar-item:hover .navbar-link {
-  color: #12c4a0 !important;
+  color: #ffffff !important;
 }
 
 .navbar .navbar-toggler {
