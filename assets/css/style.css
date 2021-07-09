@@ -453,9 +453,47 @@ img {
   width: 80%;
 }
 
+/*======== Header Area Design End ============*/
+/*======== Truset Client Area Design Start ============*/
+.trused__client {
+  background-color: #f2f7fa;
+  padding: 75px 0;
+}
+
+.trused__client .client_header {
+  text-align: center;
+}
+
+.trused__client .client_header .client__header_text {
+  font-size: 25px;
+  font-weight: 500;
+  color: #5e5e72 !important;
+  line-height: 1;
+  margin-bottom: 2.5rem;
+}
+
+.trused__client .main__client {
+  width: 100%;
+  margin: auto;
+}
+
+.trused__client .client__igm {
+  width: 25%;
+  padding: 0;
+  float: left;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.trused__client .client__igm img {
+  padding: 20px 10px;
+  width: 120px;
+}
+
+/*======== Truset Client Area Design End ============*/
 /*======== Responsive Design Start ============*/
 /* Extra small devices (phones, 600px and down) sm */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (min-width: 220px) and (max-width: 480px) {
   /*======== Header Area Design Start ============*/
   .header__area .header__content {
     margin-bottom: 50px;
@@ -478,6 +516,18 @@ img {
     padding: 3.125rem 0 !important;
   }
   /*======== Header Area Design End ============*/
+  /*======== Trushed Client Area Design Start ============*/
+  .trused__client {
+    padding: 40px 0 !important;
+  }
+  .trused__client .client__igm img {
+    padding: 10px !important;
+  }
+  .client_header .client__header_text {
+    font-size: 16px !important;
+    margin-bottom: 0.5rem !important;
+  }
+  /*======== Trushed Client Area Design End ============*/
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) md */
@@ -503,6 +553,12 @@ img {
     padding: 3.125rem 0 !important;
   }
   /*======== Header Area Design End ============*/
+  /*======== Trushed Client Area Design End ============*/
+  .client__igm img {
+    width: 5.3125rem !important;
+    padding: 20px 0 !important;
+  }
+  /*======== Trushed Client Area Design End ============*/
 }
 
 /* Medium devices (landscape tablets, 768px and up) lg */
@@ -512,45 +568,17 @@ img {
     font-size: 2.375rem !important;
   }
   /*======== Header Area Design End ============*/
+  /*======== Trushed Client Area Design End ============*/
+  .client__igm img {
+    width: 7.5rem !important;
+  }
+  /*======== Trushed Client Area Design End ============*/
 }
 
 /* Large devices (laptops/desktops, 992px and up)  xl */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
-  .col-xl-1 {
-    width: 8.33333% !important;
-  }
-  .col-xl-2 {
-    width: 16.66667% !important;
-  }
-  .col-xl-3 {
-    width: 25% !important;
-  }
-  .col-xl-4 {
-    width: 33.33333% !important;
-  }
-  .col-xl-5 {
-    width: 41.66667% !important;
-  }
-  .col-xl-6 {
-    width: 50% !important;
-  }
-  .col-xl-7 {
-    width: 58.33333% !important;
-  }
-  .col-xl-8 {
-    width: 66.66667% !important;
-  }
-  .col-xl-9 {
-    width: 75% !important;
-  }
-  .col-xl-10 {
-    width: 83.33333% !important;
-  }
-  .col-xl-11 {
-    width: 91.66667% !important;
-  }
-  .col-xl-12 {
-    width: 100% !important;
+  .client__igm img {
+    width: 9.125rem !important;
   }
 }
 

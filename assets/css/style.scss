@@ -52,12 +52,48 @@
         }
     }
 }
+/*======== Header Area Design End ============*/
 
+/*======== Truset Client Area Design Start ============*/
+.trused__client{
+    background-color: #f2f7fa;
+    padding: 75px 0;
+    .client_header{
+        text-align: center;
+        .client__header_text{
+
+            @include setFont(25,500,dark-light);
+            line-height: 1;
+            margin-bottom: 2.5rem;
+        }
+    }
+    .main__client {
+        width: 100%;
+        margin: auto;
+    }
+
+    .client__igm {
+        width: 25%;
+        padding: 0;
+        float: left;
+        box-sizing: border-box;
+
+        img {
+            padding: 20px 10px;
+            width: 120px;
+        }
+    }
+}
+
+
+
+/*======== Truset Client Area Design End ============*/
 
 
 /*======== Responsive Design Start ============*/
+
 /* Extra small devices (phones, 600px and down) sm */
-@media only screen and (min-width:320px) and (max-width: 480px) {
+@media only screen and (min-width:220px) and (max-width: 480px) {
     /*======== Header Area Design Start ============*/
     .header__area{
         .header__content{
@@ -83,6 +119,20 @@
         }
     }
     /*======== Header Area Design End ============*/
+    /*======== Trushed Client Area Design Start ============*/
+    .trused__client {
+        padding: 40px 0 !important;
+        .client__igm{
+            img{
+                padding: 10px !important;
+            }
+        }
+    }
+    .client_header .client__header_text {
+        font-size: 16px !important;
+        margin-bottom: 0.5rem !important;
+    }
+    /*======== Trushed Client Area Design End ============*/
 }
 /* Small devices (portrait tablets and large phones, 600px and up) md */
 @media only screen and (min-width:481px) and (max-width: 768px) {
@@ -118,6 +168,14 @@
         padding: 3.125rem 0 !important;
     }
     /*======== Header Area Design End ============*/
+    /*======== Trushed Client Area Design End ============*/
+    .client__igm{
+        img{
+              width: 5.3125rem !important;
+              padding: 20px 0 !important;
+        }
+    }
+    /*======== Trushed Client Area Design End ============*/
 }
 /* Medium devices (landscape tablets, 768px and up) lg */
 @media only screen and (min-width:769px) and (max-width: 1024px) {
@@ -131,10 +189,21 @@
         }
     }
      /*======== Header Area Design End ============*/
+     /*======== Trushed Client Area Design End ============*/
+     .client__igm{
+         img{
+             width: 7.5rem !important;
+         }
+     }
+     /*======== Trushed Client Area Design End ============*/
 }
 /* Large devices (laptops/desktops, 992px and up)  xl */
 @media only screen and (min-width:1025px) and (max-width: 1200px) {
-    @include col(xl);
+    .client__igm{
+        img{
+            width: 9.125rem !important;
+        }
+    }
 }
 /*======== Responsive Design End ============*/
 
