@@ -85,9 +85,51 @@
     }
 }
 
-
-
 /*======== Truset Client Area Design End ============*/
+
+/*======== About Area Design Start ============*/
+.about__area{
+    margin: 100px 0;
+    .about__details{
+        .about__top{
+            margin-bottom: 20px;
+            .btn{
+                font-size: 30px;
+                font-weight: 800;
+                @include setcolor(light);
+            }
+        }
+        h1{
+            @include setFont(40,700,dark);
+            line-height: 1.25;
+        }
+        p{
+            @include setFont(16,400,dark-light);
+            line-height: 1.25;
+            text-align: left;
+            margin-top: 20px;
+        }
+        .about_button{
+            margin-top: 40px;
+            .about__btn{
+                transition: all 1s ease-in ;
+                &:hover{
+                    @include setbgcolor(dark);
+                    @include setcolor(light);
+                }
+            }
+        }
+    }
+    .about__img{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+/*======== About Area Design End ============*/
 
 
 /*======== Responsive Design Start ============*/
@@ -118,7 +160,7 @@
             padding: 3.125rem 0 !important;
         }
     }
-    /*======== Header Area Design End ============*/
+    
     /*======== Trushed Client Area Design Start ============*/
     .trused__client {
         padding: 40px 0 !important;
@@ -132,7 +174,18 @@
         font-size: 16px !important;
         margin-bottom: 0.5rem !important;
     }
-    /*======== Trushed Client Area Design End ============*/
+   
+    /*======== About Area Design Start ============*/
+    .about__area{
+        .about__details{
+            h1{
+                font-size: 24px;
+            }
+        }
+        .about__img{
+            margin-top: 30px;
+        }
+    }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) md */
 @media only screen and (min-width:481px) and (max-width: 768px) {
@@ -176,6 +229,12 @@
         }
     }
     /*======== Trushed Client Area Design End ============*/
+    /*======== About Area Design Start ============*/
+    .about__area {
+        .about__img {
+            margin-top: 30px;
+        }
+    }
 }
 /* Medium devices (landscape tablets, 768px and up) lg */
 @media only screen and (min-width:769px) and (max-width: 1024px) {
@@ -196,6 +255,19 @@
          }
      }
      /*======== Trushed Client Area Design End ============*/
+      /*======== About Area Design Start ============*/
+      .about__area {
+          .about__details{
+              h1{
+                  font-size: 28px !important;
+              }
+          }
+          .about__img {
+              img{
+                 height: 100%;
+              }
+          }
+      }
 }
 /* Large devices (laptops/desktops, 992px and up)  xl */
 @media only screen and (min-width:1025px) and (max-width: 1200px) {
